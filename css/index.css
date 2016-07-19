@@ -1,0 +1,125 @@
+#canvas {
+  width: 90%;
+  padding: 2%;
+  background-image: url('file:///C:/Projects/evaneisenmenger/img/pattern3.jpg');
+  background-size: 100px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#canvas:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.tags {
+  margin: 0;
+}
+
+.tags:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.tags a {
+  float: left;
+  font-size: 90%;
+  background-color: white;
+  border-radius: 2px;
+  margin: 0;
+  margin-right: 8px;
+  padding: 7px;
+  box-shadow: 0 2px 5px grey;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.gallery {
+
+}
+
+.gallery img {
+  margin: 1% 1% 0% 0;
+  width: 24%;
+  height: 180px;
+  background-color: white;
+  float: left;
+  object-fit: cover;
+  cursor: pointer;
+  -webkit-animation-name: modalFade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: modalFade;
+  animation-duration: 0.5s;
+}
+
+/* Modal Styling */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 10vh; /* PADDING TOP NEEDS TO BE REVISED FOR BOX POSITION */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  height: 80vh;
+  max-width: 90%;
+}
+
+#modalCaption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  text-align: center;
+  color: white;
+  padding: 0;
+  padding-top: 15px;
+  height: 100px; /* PADDING TOP NEEDS TO BE REVISED FOR BOX POSITION */
+}
+
+.modal-content, #modalCaption {
+  -webkit-animation-name: modalFade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: modalFade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes modalFade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+ @keyframes modalFade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.close {
+  position: absolute;
+  top: 5px; /* PADDING TOP NEEDS TO BE REVISED FOR BOX POSITION */
+  right: 50px; /* PADDING TOP NEEDS TO BE REVISED FOR BOX POSITION */
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  transition: .3s;
+  text-decoration: none;
+}
+
+.close:hover, .close:focus {
+  color: gray;
+  cursor: pointer;
+}

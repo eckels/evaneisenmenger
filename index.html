@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  	<meta name="description" content="High quality photography by Evan Eisenmenger" />
+    <meta name="keywords" content="Evan, Eisenmenger, Photography, Photo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <title>Evan Eisenmenger Photography</title>
+  </head>
+
+<body>
+
+  <header>
+      <img src="img/title.png" alt="Evan Eisenmenger" class="title">
+    <nav>
+      <ul>
+        <li><a href="/">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+      <div class="icons">
+        <a href="https://twitter.com/evaneis_" target="_blank"><img src="img/icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://www.instagram.com/evaneis_/" target="_blank"><img src="img/icon/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/evan.eisenmenger.3" target="_blank"><img src="img/icon/facebook.svg" alt="Facebook"></a>
+      </div>
+  </header>
+
+  <div id="canvas">
+
+    <div class="tags">
+      <a id="all" onclick="filterItems(this.id)" class="tag" style="font-weight:bold">#all</a>
+      <a id="animals" onclick="filterItems(this.id)" class="tag">#animals</a>
+      <a id="city" onclick="filterItems(this.id)" class="tag">#city</a>
+      <a id="nature" onclick="filterItems(this.id)" class="tag">#nature</a>
+      <a id="people" onclick="filterItems(this.id)" class="tag">#people</a>
+      <a id="sports" onclick="filterItems(this.id)" class="tag">#sports</a>
+      <a id="trains" onclick="filterItems(this.id)" class="tag">#trains</a>
+    </div>
+
+    <div class="gallery">
+      <img src="img/placeholders/city1-min.jpg" alt="city" onclick="imageClick(this.id)" id="image1" class="all city">
+      <img src="img/placeholders/nature1-min.jpg" alt="nature" onclick="imageClick(this.id)" id="image2" class="all nature">
+      <img src="img/placeholders/city2-min.jpg" alt="skyline" onclick="imageClick(this.id)" id="image3" class="all city">
+      <img src="img/placeholders/animals1-min.jpg" alt="city" onclick="imageClick(this.id)" id="image4" class="all animals">
+      <img src="img/placeholders/animals2-min.jpg" alt="nature" onclick="imageClick(this.id)" id="image5" class="all animals">
+      <img src="img/placeholders/people1-min.jpg" alt="skyline" onclick="imageClick(this.id)" id="image6" class="all people">
+      <img src="img/placeholders/city3-min.jpg" alt="city" onclick="imageClick(this.id)" id="image7" class="all city">
+      <img src="img/placeholders/people2-min.jpg" alt="nature" onclick="imageClick(this.id)" id="image8" class="all people">
+      <img src="img/placeholders/sports1-min.jpg" alt="skyline" onclick="imageClick(this.id)" id="image9" class="all sports">
+      <img src="img/placeholders/sports2-min.jpg" alt="skyline" onclick="imageClick(this.id)" id="image10" class="all sports">
+      <img src="img/placeholders/trains1-min.jpg" alt="skyline" onclick="imageClick(this.id)" id="image11" class="all trains">
+      <img src="img/placeholders/trains2-min.jpg" alt="skyline" onclick="imageClick(this.id)" id="image12" class="all trains">
+      <img src="img/placeholders/city4-min.jpg" alt="skyline" onclick="imageClick(this.id)" id="image13" class="all city">
+      <img src="img/placeholders/people3-min.jpg" alt="skyline" onclick="imageClick(this.id)" id="image14" class="all people">
+      <img src="img/placeholders/sports3-min.jpg" alt="skyline" onclick="imageClick(this.id)" id="image15" class="all sports">
+      <img src="img/placeholders/nature2-min.jpg" alt="skyline" onclick="imageClick(this.id)" id="image16" class="all nature">
+      <img src="img/placeholders/nature3-min.jpg" alt="skyline" onclick="imageClick(this.id)" id="image17" class="all nature">
+      <img src="img/placeholders/city5-min.jpg" alt="skyline" onclick="imageClick(this.id)" id="image18" class="all city">
+    </div>
+
+    <div class="modal" id="modalWindow">
+      <span class="close" onclick="closeClick()">&times;</span>
+        <img class="modal-content" id="modalImage">
+          <p id="modalCaption"></p>
+    </div>
+
+  </div>
+
+  <footer>
+    <a href="http://evaneckels.me/" target="_blank">Website made by Evan Eckels</a>
+  </footer>
+
+</body>
+</html>
