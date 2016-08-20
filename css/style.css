@@ -1,7 +1,8 @@
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  max-width: 1366px;
 }
 
 header {
@@ -65,10 +66,140 @@ footer {
   text-align: right;
 }
 
+footer .icons {
+  display: none;
+}
+
 footer a {
   text-decoration: none;
   font-size: 85%;
   color: gray;
   margin-right: 3%;
   font-style: italic;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+ /* Responsive Design */
+
+@media (max-width: 950px) {
+
+  header nav li {
+    margin-right: 12px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  header {
+    height: 80px;
+  }
+
+  header .title {
+    height: 64px;
+    margin-top: 8px;
+  }
+
+  header nav {
+    margin-top: 28px;
+  }
+
+  header .icons {
+    margin-top: 28px;
+  }
+
+}
+
+@media (max-width: 830px) {
+
+  header {
+    height: 120px;
+  }
+
+  header .title {
+    float: none;
+  }
+
+  header nav {
+    float: none;
+    margin-top: 2px;
+  }
+
+  header nav ul {
+    padding: 0;
+    width: auto;
+    margin-left: 3%;
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  header .title-div {
+    margin-left: 50%;
+  }
+
+  header .title {
+  margin-left: -147px; /* 295px Width */
+  }
+
+  header nav ul {
+    text-align: center;
+  }
+
+  header nav a {
+    color: rgba(0, 0, 0, .6);
+    font-size: 100%;
+    line-height: 170%;
+  }
+
+  header .icons {
+    display: none;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .icons {
+    margin: 5px 0 5px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .icons img {
+    height: 20px;
+    width: 20px;
+    margin-left: 12px;
+  }
+
+  footer a[href="http://evaneckels.me/"] {
+    margin-right: 0;
+  }
+
+}
+
+@media (max-width: 370px) {
+
+  header {
+    height: 138px;
+  }
+
+}
+
+@media (max-width: 300px) {
+
+  header {
+    height: 130px;
+  }
+
+  header .title {
+    height: 56px;
+    margin-left: -129px; /* 258px Width */
+    margin-top: 5px;
+  }
+
 }

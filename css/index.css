@@ -33,20 +33,27 @@
   border-radius: 2px;
   margin: 0;
   margin-right: 8px;
+  margin-bottom: 8px;
   padding: 7px;
   box-shadow: 0 2px 5px grey;
   letter-spacing: 1px;
   cursor: pointer;
 }
 
-.gallery {
+.tags-desc {
+  font-style: italic;
+  color: rgba(0, 0, 0, .5);
+  margin-top: 0;
+}
 
+.gallery {
+  width: 100%;
 }
 
 .gallery img {
   margin: 1% 1% 0% 0;
-  width: 24%;
-  height: 180px;
+  width: 380px;
+  height: 280px;
   background-color: white;
   float: left;
   object-fit: cover;
@@ -70,14 +77,18 @@
   height: 100vh;
   overflow-x: auto;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-div {
+  background-color:
 }
 
 .modal-content {
   margin: auto;
   display: block;
   width: auto;
-  height: 80vh;
+  max-height: 80vh;
   max-width: 90%;
 }
 
@@ -123,3 +134,52 @@
   color: gray;
   cursor: pointer;
 }
+
+/* Responsive Design */
+
+@media (max-width: 820px) {
+  .tags a {
+    padding: 5px;
+  }
+
+  .tags-desc {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 690px) {
+  .tags a {
+    padding: 4px;
+  }
+
+  .tags-desc {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 590px) { .modal {padding-top: 20vh;} .close {right: 20px;}}
+
+@media (max-width: 1305px) {.gallery img {height: 252px;width: 342px;}}
+@media (max-width: 1175px) {.gallery img {height: 224px;width: 304px;}}
+@media (max-width: 1044px) {.gallery img {height: 210px;width: 285px;}}
+@media (max-width: 979px) {.gallery img {height: 196px;width: 266px;}}
+@media (max-width: 914px) {.gallery img {height: 182px;width: 247px;}}
+@media (max-width: 848px) {.gallery img {height: 168px;width: 228px;}}
+/* Change to 2 wide */
+@media (max-width: 783px) {.gallery img {height: 252px;width: 342px;}}
+@media (max-width: 775px) {.gallery img {height: 238px;width: 323px;}}
+@media (max-width: 732px) {.gallery img {height: 224px;width: 304px;}}
+@media (max-width: 689px) {.gallery img {height: 210px;width: 285px;}}
+@media (max-width: 646px) {.gallery img {height: 196px;width: 266px;}}
+@media (max-width: 603px) {.gallery img {height: 182px;width: 247px;}}
+@media (max-width: 560px) {.gallery img {height: 168px;width: 228px;}}
+@media (max-width: 516px) {.gallery img {height: 154px;width: 209px;}}
+@media (max-width: 473px) {.gallery img {height: 140px;width: 190px;}}
+/* Change to 1 wide */
+@media (max-width: 430px) {.gallery img {height: 252px;width: 342px;}}
+@media (max-width: 379px) {.gallery img {height: 238px;width: 323px;}}
+@media (max-width: 360px) {.gallery img {height: 224px;width: 304px;}}
+@media (max-width: 341px) {.gallery img {height: 210px;width: 285px;}}
+@media (max-width: 317px) {.gallery img {height: 196px;width: 266px;}}
+@media (max-width: 296px) {.gallery img {height: 182px;width: 247px;}}
+@media (max-width: 276px) {.gallery img {height: 168px;width: 228px;}}
