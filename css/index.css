@@ -59,9 +59,14 @@
   object-fit: cover;
   cursor: pointer;
   -webkit-animation-name: modalFade;
-  -webkit-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.7s;
   animation-name: modalFade;
-  animation-duration: 0.5s;
+  animation-duration: 0.7s;
+  transition: filter .3s;
+}
+
+.gallery img:hover {
+  filter: opacity(80%);
 }
 
 /* Modal Styling */
