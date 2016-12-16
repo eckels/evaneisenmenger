@@ -12,7 +12,7 @@ function filterItems(hashtag) {
     }
 
     for (selectedImageIndex = 0; selectedImageIndex < selectedImages.length; selectedImageIndex++) {
-      selectedImages[selectedImageIndex].style.display = "block";
+      selectedImages[selectedImageIndex].style.display = "inline-block";
     }
 
     var selectedTags = document.getElementsByClassName("tag");

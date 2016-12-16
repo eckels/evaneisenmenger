@@ -96,12 +96,37 @@ footer a:hover {
   text-align: center;
 }
 
-h1 {
+.album-title h1, h1 {
   font-family: 'Playfair Display', serif;
   font-size: 280%;
   font-weight: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.album-title hr {
+  width: 60%;
+}
+
+.album-title p {
+  font-size: 110%;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin-top: 5px;
+}
+
+@media (max-width: 700px) {
+  .album-title h1 {
+    font-size: 200%;
+  }
+  .album-title hr {
+    width: 80%;
+  }
+  .album-title p {
+    font-size: 100%;
+  }
 }
 
 .body-wrap {
