@@ -1,10 +1,81 @@
-.about-section-1 {
+.body-wrap {
+  background-image: url("https://eckels.github.io/evaneisenmenger/img/camera.png");
+  background-position: center;
+  background-size: 1000px;
+  background-repeat: no-repeat;
+}
 
+.about-section-1 {
+  float: right;
+  width: 58%;
+  margin: 1%;
+  margin-left: 2%;
+  margin-right: 0;
 }
 
 .about-section-1 p {
-  font-size: 200%;
+  font-size: 110%;
   font-weight: normal;
+  line-height: 200%;
+}
+
+.about-section-2 {
+  float: right;
+  width: 38%;
+  margin: 1%;
+  text-align: center;
+}
+
+.about-section-2 img {
+  width: 250px;
+  margin-top: 30px;
+}
+
+.contact {
+  padding: 15px;
+  margin-top: 45px;
+  border: double rgba(0, 0, 0, 0.4) 4px;
+  width: 320px;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  font-size: 160%;
+  text-align: left;
   margin: 0;
   margin-bottom: 6px;
+}
+
+.contact p, .contact a {
+  text-align: left;
+  margin: 0;
+  margin-left: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.contact hr {
+  border: none;
+  margin: 15px;
+}
+
+@media (max-width: 930px) {
+.about-section-1, .about-section-2 {
+  float: none;
+  width: auto;
+}
+.about-section-2 img {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.about-section-1 p {
+  max-width: 76%;
+  text-align: center;
+  margin: 0 12% 40px 12%;
+}
+.about-section-1 .contact {
+  margin: auto;
+}
 }
