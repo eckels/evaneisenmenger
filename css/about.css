@@ -61,21 +61,27 @@ h3 {
 }
 
 @media (max-width: 930px) {
-.about-section-1, .about-section-2 {
-  float: none;
-  width: auto;
+  .about-section-1, .about-section-2 {
+    float: none;
+    width: auto;
+  }
+  .about-section-2 img {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .about-section-1 .about-p {
+    max-width: 76%;
+    text-align: center;
+    margin: 0 12% 40px 12%;
+  }
+  .about-section-1 .contact {
+    margin: auto;
+  }
 }
-.about-section-2 img {
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-.about-section-1 .about-p {
-  max-width: 76%;
-  text-align: center;
-  margin: 0 12% 40px 12%;
-}
-.about-section-1 .contact {
-  margin: auto;
-}
+
+@media (max-width: 400px) {
+  .contact {
+    width: 250px;
+  }
 }
